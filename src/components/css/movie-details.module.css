@@ -1,0 +1,9 @@
+.starWarsImage {
+  width: 100%;
+  max-width: 200px;
+}
+
+.root {
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}

@@ -1,0 +1,41 @@
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th {
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+
+.table .currentSort::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  transform: translateY(-50%);
+}
+
+.table .currentSort.asc::after {
+  border-bottom: 8px solid black;
+}
+
+.table .currentSort.desc::after {
+  border-top: 8px solid black;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.filterContainer {
+  max-width: 250px;
+  width: 100%;
+  padding-bottom: 20px;
+}
